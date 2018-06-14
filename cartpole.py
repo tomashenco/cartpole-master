@@ -37,6 +37,8 @@ class CartPole:
         self.agent = Agent(self.state_size, self.action_size)
         self.agent.load_model()
 
+        self.env = gym.wrappers.Monitor(self.env, 'video')
+
         for index_episode in range(self.show_episodes):
             state = self.env.reset()
             state = np.reshape(state, [1, self.state_size])
