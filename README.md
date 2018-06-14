@@ -11,3 +11,5 @@ To train new model
 To show results with pretrained model
 
 ```python show.py```
+
+![Demo](video-after-training.gif)
